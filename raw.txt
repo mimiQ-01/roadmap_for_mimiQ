@@ -1,0 +1,80 @@
+
+
+Introduction:
+
+Now this is my promise - if followed well, you will have a solid understanding of programming. A lot better than most students. 
+My language and tone will be informal but my priority is to make sure what I write is clearly understandable.
+This won't be technically difficult, but I will be honest with you mate, this require PATIENCE. It is the ONLY prerequisite I require from you as a reader.
+
+What you can expect after reading the page:
+-> What it means to write code 
+-> How to write code in C
+
+
+Storage
+
+Now, the first concept we shall start with, is storage.
+How do computers store data ?
+Names, places, colors, pictures, anything at all ? 
+
+I will explain this concept now.
+Here is a philosophy - something exists or doesn't exist. 
+That's the most fundamental statement about existance right ?
+This philosophy is the base of digital storage.
+We have 2 labels now - existance and non-existance.
+we have 2 major questions answered to continue
+    Q1: How can someone detect existance ? 
+    Q2: How can someone store numbers like 1000 from the concept of existance ? 
+To answer the first - ENERGY. if energy of any form is detected, the presence is detected. 
+There is a bucket, to check if there's water, you can just see it - the light is a form of energy, or touch the water - the warmth is a form of energy.
+Us humans have eyes to see, and hands to touch, but what about a computer ? 
+It can sense electricity. 
+How it senses electricity is not really our concern, but it involves what we call semiconductors. 
+A bucket for us, is a set of semiconductors for a computer. 
+-> bucket:water :: semiconductors:electricity 
+Now we know how to detect existance, what to do next?
+Suppose you have 2 buckets, 
+and you check water on 2 buckets, how many outcomes are possible ?
+bucket1 bucket2 
+yes     yes 
+yes     no
+no      yes
+no      no 
+4 outcomes. 
+If 3 buckets? 8 outcomes.
+if 4 buckets? 16 outcomes.
+if we have 10 buckets? 1024 outcomes.
+Its 2 power the number of buckets.
+
+Now this is the time to use our intelligence.
+We can associate every outcome to a "thing" 
+It can be anything. 
+
+Now the number of buckets determine the number of "things" we can associate to. 
+as we saw earlier, with 10 buckets, we can pour water such a way that it can give 1024 unique outcomes - 1024 things. 
+
+This is the concept of storing numbers. 
+A number 'x' if less than 1024, can be represented as a 10-bucket series with some buckets filled with water. 
+But how do we do the mapping ? 
+It's our wish, but the most common way looks like this ;
+bucket 1    bucket 2        number 
+no           no               0
+no           yes              1
+yes          no               2
+yes          yes              3 
+
+With 2 buckets, we stored/represented the numbers 0,1,2,3 
+with 10 buckets, we can do it from 0 to 1023. 
+with 1000 buckets, we can store a lot of lot of numbers, more than anyone would ever need!
+
+What we discussed is what we call "binary representation"
+Which means a representation with 2 labels 
+Our labels were yes/no 
+the yes is often considered as 1 to generalize the existance as present - water in bucket detected or electricity in semiconductors detected - both are 1. 
+and if not detected, its 0.
+That's how computers store numbers. 
+
+Now the computer can simply check its 4 semiconductors-buckets. 
+based on the bucket content, it will get a number from 0 to 15.
+
+
